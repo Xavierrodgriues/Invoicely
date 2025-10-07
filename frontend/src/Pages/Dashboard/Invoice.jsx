@@ -40,7 +40,7 @@ const Invoice = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:3000/api/admin/invoice/create",
+        "/api/admin/invoice/create",
         formData,
         { withCredentials: true }
       );

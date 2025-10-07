@@ -12,7 +12,7 @@ const build_path = path.join(_dirname, "../frontend/dist");
 app.use(express.static(build_path));
 
 app.use(cors({
-    origin: "http://52.55.187.171:3000/",
+    origin: "http://52.55.187.171:3000",
     methods: ["POST", "GET", "PATCH", "DELETE"],
     credentials: true
 }));

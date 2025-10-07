@@ -11,9 +11,9 @@ export default function AuthForm() {
 
     let url = "";
     if(isRegister){
-      url = "http://localhost:3000/api/auth/register";
+      url = "/api/auth/register";
     }else {
-      url = "http://localhost:3000/api/auth/login"
+      url = "/api/auth/login"
     }
 
     try{

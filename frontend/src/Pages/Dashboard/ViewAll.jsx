@@ -13,7 +13,7 @@ const ViewAll = () => {
   const fetchInvoices = async (pageNum = 1) => {
     try {
       const res = await fetch(
-        `http://localhost:3000/api/admin/invoice/view-all?page=${pageNum}&limit=5`,
+        `/api/admin/invoice/view-all?page=${pageNum}&limit=5`,
         {
           method: "GET",
           credentials: "include", // sends JWT cookie

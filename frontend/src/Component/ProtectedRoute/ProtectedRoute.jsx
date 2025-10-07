@@ -11,7 +11,7 @@ const ProtectedRoute = ({ children }) => {
   useEffect(() => {
     const verifyUser = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/api/auth/verify", {
+        const res = await axios.get("/api/auth/verify", {
           withCredentials: true, // important for sending cookies
         });
         if (res.status === 200) {
