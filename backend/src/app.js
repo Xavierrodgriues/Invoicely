@@ -26,7 +26,7 @@ app.use("/api/auth", authRouter);
 app.use("/api/admin/invoice", invoiceRouter);
 // Catch-all for React Router (SPA)
 app.use((req, res) => {
-  res.sendFile(path.join(buildPath, "index.html"));
+  res.sendFile(path.join(build_path, "index.html"));
 });
 
 module.exports = app;
